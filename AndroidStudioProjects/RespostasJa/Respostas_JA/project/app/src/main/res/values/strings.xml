@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RespostasJa</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="descricao_imagens">Image</string>
+    <string name="label_login">Login</string>
+    <string name="btn_cadastre">Cadastre-se</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
