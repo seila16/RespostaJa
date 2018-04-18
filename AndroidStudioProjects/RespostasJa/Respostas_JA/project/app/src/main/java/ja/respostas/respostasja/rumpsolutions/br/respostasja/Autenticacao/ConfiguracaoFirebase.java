@@ -5,7 +5,6 @@ package ja.respostas.respostasja.rumpsolutions.br.respostasja.Autenticacao;
  */
 //autenticacao manual do firebase onde o Mauth virou autenticacao nos codigos
 
-import android.provider.ContactsContract;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -20,5 +19,6 @@ public final class ConfiguracaoFirebase {
         }
         return autenticacao;
     }
+    //comentario
 
 }
