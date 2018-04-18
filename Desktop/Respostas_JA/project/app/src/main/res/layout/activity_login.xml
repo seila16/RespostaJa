@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ja.respostas.respostasja.rumpsolutions.br.respostasja.Modelo.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/descricao_imagens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="@string/label_login"
+        android:textColor="@color/color_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_login_cadastrar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_cadastre"
+        app:layout_constraintStart_toStartOf="@+id/edt_login_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edt_login_senha" />
+
+    <Button
+        android:id="@+id/btn_logar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/btn_entrar"
+        app:layout_constraintEnd_toEndOf="@+id/edt_login_senha"
+        app:layout_constraintStart_toEndOf="@+id/btn_login_cadastrar"
+        app:layout_constraintTop_toTopOf="@+id/btn_login_cadastrar" />
+
+    <EditText
+        android:id="@+id/edt_login_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edt_login_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@color/color_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_login_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_login_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_login_email" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signG"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_logar"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_cadastrar" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebookLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign Facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signG"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/signG"
+        app:layout_constraintTop_toBottomOf="@+id/signG"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
